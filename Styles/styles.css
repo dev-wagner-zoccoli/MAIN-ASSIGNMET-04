@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'ZCOOL';
+    src: url(./Fonts/ZCOOLQingKeHuangYou-Regular.ttf) format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 42px;
+    font-family: 'ZCOOL';
+}
+
+body {
+    height: 1200px;
+    background-image: linear-gradient(135deg, #c103c8, #00b2da);
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+main {
+    width: 400px;
+    height: 650px;
+    margin: 50px auto;
+    /* text-align: center; */
+    background-color: #000000ca;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+#display {
+    width: 400px;
+    height: 150px;
+    /* background-color: #000000ca; */
+    border-radius: 10px 10px 0 0;
+}
+
+.previous-operand,
+.current-operand {
+    padding: 10px;
+    text-align: right;
+    line-height: 50px;
+}
+
+.previous-operand {
+    font-size: 32px;
+    color: rgb(159, 159, 159);
+}
+
+#buttonsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    width: 400px;
+    height: 450px;
+    /* justify-content: center;
+    align-items: center; */
+
+    /* border: black solid 1px; */
+}
+
+button {
+    background-color: #e2e2e2;
+    border: white solid 1px;
+    outline: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #959595;
+    transition: .5s;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.equals {
+    background-color: #df680d;
+    transition: .5s;
+}
+
+.equals:hover {
+    transition: .5s;
+    background-color: #9f4a08;
+}
+
+.calc-footer {
+    display: flex;
+    margin-top: 8px;
+    line-height: 35px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* border: white solid 1px; */
+}
+
+p {
+    margin-left: 5px;
+    font-size: 18px;
+    color: white;
+}
